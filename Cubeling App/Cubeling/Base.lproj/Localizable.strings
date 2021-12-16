@@ -1,0 +1,55 @@
+/* 
+  Localizable.strings
+  Cubeling
+
+  Created by Heiko Etzold on 11.08.15.
+  MIT License
+*/
+
+DeleteHead = "Delete all cubes?";
+DeleteQuestion = "Do you really want to delete all cubes?";
+DeleteCancel = "Cancel";
+DeleteDelete = "Delete";
+
+HintLabelText = "Only cubes lying on the gray tiles will be displayed.";
+HintShadowLabelText = "Only shadows of cubes lying on the gray tiles will be displayed.";
+HintNumberLabelText = "Only numbers of cubes lying on the gray tiles will be displayed.";
+CodeRunningActive = "Code Tracing is active. Manual processing is not possible.";
+
+FirstInfoLabelText = "Touch a field to add a cube.";
+SecondInfoLabelText = "Long press a cube to remove it.";
+FirstInfoLabelMacText = "Click a field to add a cube.";
+SecondInfoLabelMacText = "Long click a cube to remove it.";
+
+CodeAddCube = "buildCube";
+CodeAddCubeAt = "at";
+CodeRemoveCube = "removeCube";
+CodeSetPosition = "set";
+CodeChangePosition = "change";
+CodeChangePositionBy = "by";
+CodeLoopTextDo = "do";
+CodeLoopTextTimes = "times";
+CodeLoopOf = "of";
+CodePositionText = "position";
+CodeNumberText = "number";
+CodeCountingNumberText = "counting number";
+
+InfoPositionTextLabel = "Current value for ";
+InfoPositionNotSet = "not set";
+
+ErrorSetValues = "Both values have to been set.";
+ErrorSetValue = "The position has to been set correctly.";
+ErrorSetPosition = "The position has to been chosen.";
+
+CubeBuildingName = "building";
+CubeBuildingNotLoaded = "Cube Building not loaded";
+CubeBuildingNotLoadedText = "The requested cube building was not downloaded.";
+TryAgain = "Try again";
+CubeBuildingOld = "Older Cube Building";
+CubeBuildingOldText = "This Cube Building was created with a former version of Cubeling app. It's potientally not shown correctly.";
+CubeExport = "Cube Export";
+
+ExportImagesText = "Export Views as Images";
+ExportCodeText = "Export Code as Text";
+ExportCubeText = "Safe Cube Building";
+ImportCubeText = "Open Cube Building";

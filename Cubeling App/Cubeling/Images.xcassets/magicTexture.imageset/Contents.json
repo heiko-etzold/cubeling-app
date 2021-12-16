@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "magiclTexture.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

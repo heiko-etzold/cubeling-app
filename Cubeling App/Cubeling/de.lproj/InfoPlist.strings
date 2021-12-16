@@ -1,0 +1,14 @@
+/* 
+  InfoPlist.strings
+  Cubeling
+
+  Created by Heiko Etzold on 11.06.18.
+  GNU GPLv3
+*/
+
+"CFBundleDisplayName" = "Klötzchen";
+"CFBundleName" = "Klötzchen";
+
+"Cube Building" = "Würfelbauwerk";
+
+NSPhotoLibraryAddUsageDescription = "Um Bilder zu speichern, benötigt die App Schreibrechte für deine Fotos.";

@@ -1,0 +1,32 @@
+{
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "grid-size" : "regular"
+  },
+  "stickers" : [
+    {
+      "filename" : "woodenCubeSticker.sticker"
+    },
+    {
+      "filename" : "stackableCubeSticker.sticker"
+    },
+    {
+      "filename" : "magicCubeSticker.sticker"
+    },
+    {
+      "filename" : "woodenOutlineCubeSticker.sticker"
+    },
+    {
+      "filename" : "stackableOutlineCubeSticker.sticker"
+    },
+    {
+      "filename" : "magicOutlineCubeSticker.sticker"
+    },
+    {
+      "filename" : "nightCubeSticker.sticker"
+    }
+  ]
+}

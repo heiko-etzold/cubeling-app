@@ -1,0 +1,30 @@
+
+/* Class = "UILabel"; text = "3D"; ObjectID = "0dz-Cb-ai0"; */
+"0dz-Cb-ai0.text" = "3D";
+
+/* Class = "UIViewController"; title = "InfoViewController"; ObjectID = "3Jz-Dd-ElS"; */
+"3Jz-Dd-ElS.title" = "InfoViewController";
+
+/* Class = "UINavigationItem"; title = "Root View Controller"; ObjectID = "4pE-Wh-Ce3"; */
+"4pE-Wh-Ce3.title" = "Root View Controller";
+
+/* Class = "UILabel"; text = "→"; ObjectID = "8aJ-La-hLV"; */
+"8aJ-La-hLV.text" = "→";
+
+/* Class = "UISegmentedControl"; FKk-xU-6nC.segmentTitles[0] = "3D"; ObjectID = "FKk-xU-6nC"; */
+"FKk-xU-6nC.segmentTitles[0]" = "3D";
+
+/* Class = "UINavigationItem"; title = "Export"; ObjectID = "hTu-eT-7Sl"; */
+"hTu-eT-7Sl.title" = "Export";
+
+/* Class = "UILabel"; text = "→"; ObjectID = "ua1-4A-ntk"; */
+"ua1-4A-ntk.text" = "→";
+
+/* Class = "UINavigationItem"; title = "Export Views as Images"; ObjectID = "vlL-eF-4iI"; */
+"vlL-eF-4iI.title" = "Ansichten als Bilder exportieren";
+
+"hCX-oz-qoC.normalTitle" = "Ansichten als Bilder exportieren";
+
+"6uw-lJ-HU1.normalTitle" = "Würfelgebäude speichern";
+
+"PhJ-ZC-HCs.normalTitle" = "Würfelgebäude öffnen";

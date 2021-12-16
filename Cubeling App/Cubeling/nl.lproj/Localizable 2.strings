@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  Cube Builder
+
+  Created by Heiko Etzold on 11.08.15.
+  GNU GPLv3
+*/
+
+DeleteHead = "Alle kubussen verwijderen?";
+DeleteQuestion = "Wil je echt alle kubussen verwijderen?";
+DeleteCancel = "Annuleren";
+DeleteDelete = "Verwijderen";

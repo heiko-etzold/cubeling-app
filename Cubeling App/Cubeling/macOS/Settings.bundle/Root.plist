@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>StringsTable</key>
+	<string>Root</string>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>Show coordinate numbers</string>
+			<key>Key</key>
+			<string>settings_axisNumbers</string>
+			<key>DefaultValue</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>Show colored axes</string>
+			<key>Key</key>
+			<string>settings_axisLine</string>
+			<key>DefaultValue</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>Allow loops</string>
+			<key>Key</key>
+			<string>settings_loops</string>
+			<key>DefaultValue</key>
+			<true/>
+			<key>SupportedUserInterfaceIdioms</key>
+			<array>
+				<string>Pad</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>Allow variables</string>
+			<key>Key</key>
+			<string>settings_variables</string>
+			<key>DefaultValue</key>
+			<true/>
+			<key>SupportedUserInterfaceIdioms</key>
+			<array>
+				<string>Pad</string>
+			</array>
+		</dict>
+        <dict>
+            <key>Type</key>
+            <string>PSGroupSpecifier</string>
+            <key>Title</key>
+            <string> </string>
+        </dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Number of rows/columns</string>
+			<key>Key</key>
+			<string>settings_numberOfCubes</string>
+			<key>DefaultValue</key>
+			<integer>7</integer>
+			<key>Values</key>
+			<array>
+				<integer>3</integer>
+				<integer>4</integer>
+				<integer>5</integer>
+				<integer>6</integer>
+				<integer>7</integer>
+				<integer>8</integer>
+				<integer>9</integer>
+				<integer>10</integer>
+			</array>
+			<key>Titles</key>
+			<array>
+				<string>3</string>
+				<string>4</string>
+				<string>5</string>
+				<string>6</string>
+				<string>7</string>
+				<string>8</string>
+				<string>9</string>
+				<string>10</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Type of Cubes</string>
+            <key>FooterText</key>
+            <string>If you change the number of rows/columns or the type of cubes, all cubes will be removed.</string>
+            <key>Key</key>
+			<string>settings_typeOfCubes</string>
+			<key>DefaultValue</key>
+			<integer>0</integer>
+			<key>Description</key>
+			<string>Wenn ...</string>
+			<key>Values</key>
+			<array>
+				<integer>0</integer>
+				<integer>1</integer>
+				<integer>2</integer>
+			</array>
+			<key>Titles</key>
+			<array>
+				<string>wooden cubes</string>
+				<string>stackable cubes</string>
+				<string>magic cubes</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

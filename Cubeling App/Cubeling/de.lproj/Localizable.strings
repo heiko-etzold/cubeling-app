@@ -1,0 +1,55 @@
+/* 
+  Localizable.strings
+  Cubeling
+ 
+  Created by Heiko Etzold on 11.08.15.
+  MIT License
+*/
+
+DeleteHead = "Alle Würfel löschen?";
+DeleteQuestion = "Möchtest du wirklich alle Würfel löschen?";
+DeleteCancel = "Abbrechen";
+DeleteDelete = "Löschen";
+
+HintLabelText = "Es werden nur die Würfel dargestellt, die auf den grauen Feldern liegen.";
+HintShadowLabelText = "Es werden nur die Schatten der Würfel dargestellt, die auf den grauen Feldern liegen.";
+HintNumberLabelText = "Es werden nur die Anzahlen der Würfel dargestellt, die auf den grauen Feldern liegen.";
+CodeRunningActive = "Die Code-Ablaufverfolgung ist aktiv. Es ist keine manuelle Bearbeitung möglich.";
+
+FirstInfoLabelText = "Tippe ein Feld an um einen neuen Würfel zu erzeugen.";
+SecondInfoLabelText = "Tippe länger auf einen Würfel um ihn wieder zu entfernen.";
+FirstInfoLabelMacText = "Klicke ein Feld an um einen neuen Würfel zu erzeugen.";
+SecondInfoLabelMacText = "Klicke länger auf einen Würfel um ihn wieder zu entfernen.";
+
+CodeAddCube = "baueWürfel";
+CodeAddCubeAt = "bei";
+CodeRemoveCube = "entferneWürfel";
+CodeSetPosition = "setze";
+CodeChangePosition = "ändere";
+CodeChangePositionBy = "um";
+CodeLoopTextDo = "mache";
+CodeLoopTextTimes = "mal";
+CodeLoopOf = "von";
+CodePositionText = "Position";
+CodeNumberText = "Zahl";
+CodeCountingNumberText = "Anzahl";
+
+ErrorSetValues = "Beide Werte müssen gesetzt sein.";
+ErrorSetValue = "Die Position muss korrekt gesetzt sein.";
+ErrorSetPosition = "Die Position muss ausgewählt sein.";
+
+InfoPositionTextLabel = "Aktueller Wert für ";
+InfoPositionNotSet = "nicht gesetzt";
+
+CubeBuildingName = "bauwerk";
+CubeBuildingNotLoaded = "Würfelbauwerk nicht geladen";
+CubeBuildingNotLoadedText = "Das gewünschte Würfelbauwerk wurde noch nicht heruntergeladen.";
+TryAgain = "Erneut versuchen";
+CubeBuildingOld = "Älteres Würfelbauwerk";
+CubeBuildingOldText = "Dieses Würfelbauwerk wurde mit einer älteren Klötzchen-Version erstellt und wird daher evtl. nicht vollständig korrekt dargestellt.";
+CubeExport = "Würfel-Export";
+
+ExportImagesText = "Ansichten als Bilder exportieren";
+ExportCodeText = "Code als Text exportieren";
+ExportCubeText = "Würfelgebäude speichern";
+ImportCubeText = "Würfelgebäude öffnen";

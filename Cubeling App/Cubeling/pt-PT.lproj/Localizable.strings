@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  Cubeling
+
+  Created by Heiko Etzold on 11.08.15.
+  MIT License
+*/
+
+DeleteHead = "Remover todos os cubos?";
+DeleteQuestion = "Tem a certeza que deseja remover todos os cubos?";
+DeleteCancel = "Cancelar";
+DeleteDelete = "Remover";

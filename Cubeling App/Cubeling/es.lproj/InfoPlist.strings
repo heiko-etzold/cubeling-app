@@ -1,0 +1,11 @@
+/* 
+  InfoPlist.strings
+  Cubeling
+
+  Created by Heiko Etzold on 11.06.18.
+  GNU GPLv3
+*/
+
+"CFBundleDisplayName" = "Cubiteando";
+"CFBundleName" = "Cubiteando";
+

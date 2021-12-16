@@ -1,0 +1,31 @@
+//3D button
+"2Kr-UB-2Z4.segmentTitles[0]" = "3D";
+
+//add Cube
+"xjg-hf-sVd" = "Tippe ein Feld an um einen neuen Würfel zu erzeugen.";
+"Yve-pD-In7.text" = "Klicke ein Feld an um einen neuen Würfel zu erzeugen.";
+
+//remove cube
+"02y-SV-N5G" = "Tippe länger auf einen Würfel um ihn wieder zu entfernen.";
+"L81-sH-3Mw.text" = "Klicke länger auf einen Würfel um ihn wieder zu entfernen.";
+
+//building plan
+"Z08-x9-pBZ.title" = "Bauplan";
+
+//3D view
+"yWM-5I-fbW.title" = "3D-Ansicht";
+
+
+//export views
+"NBz-18-RMU.normalTitle" = "Ansichten als Bilder exportieren";
+
+//export code
+"D89-2X-s2x.normalTitle" = "Code als Text exportieren";
+
+
+//safe cube building
+"fH6-nE-4jM.normalTitle" = "Würfelgebäude speichern";
+
+//open cube building
+"L8O-Rt-cMl.normalTitle" = "Würfelgebäude öffnen";
+

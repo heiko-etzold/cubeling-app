@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49z-p9-4dg">
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="n0g-iS-185">
+            <objects>
+                <viewController id="49z-p9-4dg" customClass="ViewController" customModule="Cubeling" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hc4-me-Xpl"/>
+                        <viewControllerLayoutGuide type="bottom" id="qlm-HY-ghH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="R3p-R9-jBa">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SaC-I6-jB4">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="320"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Di-yv-hLY" userLabel="LeftView">
+                                        <rect key="frame" x="0.0" y="0.0" width="447.5" height="320"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nUq-lW-ump" userLabel="Sperator">
+                                        <rect key="frame" x="447.5" y="0.0" width="1" height="320"/>
+                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="1" id="aas-rn-GWY"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l3T-sB-bXf" userLabel="RightView">
+                                        <rect key="frame" x="448.5" y="0.0" width="447.5" height="320"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="l3T-sB-bXf" firstAttribute="width" secondItem="6Di-yv-hLY" secondAttribute="width" id="ArG-Yn-3Oy"/>
+                                </constraints>
+                            </stackView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EBP-zb-LK4">
+                                <rect key="frame" x="0.0" y="320" width="896" height="73"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="9Gh-m1-LnR"/>
+                                    <barButtonItem id="XDg-Tg-6hW">
+                                        <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="FKk-xU-6nC">
+                                            <rect key="frame" x="128" y="20.5" width="200" height="32"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <segments>
+                                                <segment title="3D"/>
+                                                <segment title="" image="BarPlan"/>
+                                            </segments>
+                                            <connections>
+                                                <action selector="tapLeftViewSegmentControl:" destination="49z-p9-4dg" eventType="valueChanged" id="rsL-uY-p4z"/>
+                                            </connections>
+                                        </segmentedControl>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="flexibleSpace" id="4h8-1A-9Wz"/>
+                                    <barButtonItem systemItem="trash" id="1Q5-5D-bxd">
+                                        <connections>
+                                            <action selector="pressDeleteButton:" destination="49z-p9-4dg" id="oRb-XL-BBf"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="organize" id="ISb-nx-gw9">
+                                        <connections>
+                                            <segue destination="EjD-hz-iDc" kind="popoverPresentation" popoverAnchorBarButtonItem="ISb-nx-gw9" id="azA-uN-94l">
+                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                            </segue>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="flexibleSpace" id="wlz-aC-QQm"/>
+                                    <barButtonItem id="7ZW-Fi-Pu3">
+                                        <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="Qqs-Qd-nFY">
+                                            <rect key="frame" x="568" y="20.5" width="200" height="32"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <segments>
+                                                <segment title="" image="BarPlan"/>
+                                                <segment title="" image="BarMulti"/>
+                                                <segment title="" image="BarCav"/>
+                                                <segment title="" image="BarIso"/>
+                                            </segments>
+                                            <connections>
+                                                <action selector="tapRightViewSegmentControl:" destination="49z-p9-4dg" eventType="valueChanged" id="Pkh-rS-PEF"/>
+                                            </connections>
+                                        </segmentedControl>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="uOo-kV-uY1"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SaC-I6-jB4" firstAttribute="top" secondItem="hc4-me-Xpl" secondAttribute="bottom" id="CCr-hQ-SyA"/>
+                            <constraint firstItem="qlm-HY-ghH" firstAttribute="top" secondItem="EBP-zb-LK4" secondAttribute="bottom" id="Czh-Fv-vZ0"/>
+                            <constraint firstItem="EBP-zb-LK4" firstAttribute="leading" secondItem="R3p-R9-jBa" secondAttribute="leading" id="LBU-CY-6Uz"/>
+                            <constraint firstItem="SaC-I6-jB4" firstAttribute="leading" secondItem="R3p-R9-jBa" secondAttribute="leading" id="RDB-y0-sLa"/>
+                            <constraint firstAttribute="trailing" secondItem="EBP-zb-LK4" secondAttribute="trailing" id="YfV-gW-Tzs"/>
+                            <constraint firstAttribute="trailing" secondItem="SaC-I6-jB4" secondAttribute="trailing" id="wR3-kH-1oV"/>
+                            <constraint firstItem="EBP-zb-LK4" firstAttribute="top" secondItem="SaC-I6-jB4" secondAttribute="bottom" id="yXm-tX-DKO"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <connections>
+                        <outlet property="leftView" destination="6Di-yv-hLY" id="B2C-OX-iGz"/>
+                        <outlet property="leftViewSegmentControl" destination="FKk-xU-6nC" id="NoQ-wO-sMh"/>
+                        <outlet property="rightView" destination="l3T-sB-bXf" id="7Rn-nM-Ctf"/>
+                        <outlet property="rightViewSegmentControl" destination="Qqs-Qd-nFY" id="9KL-38-AuL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CSA-kG-jSv" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="206" y="-773"/>
+        </scene>
+        <!--ExportViewController-->
+        <scene sceneID="Ksv-qz-Z3B">
+            <objects>
+                <viewController storyboardIdentifier="ExportViewController" title="ExportViewController" id="EjD-hz-iDc" customClass="ExportViewController" customModule="Cubeling" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Asb-pD-lLu"/>
+                        <viewControllerLayoutGuide type="bottom" id="kVn-GA-KG6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Wkt-60-114">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="400"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XZM-m2-Az1">
+                                <rect key="frame" x="60" y="123.5" width="163" height="30"/>
+                                <color key="tintColor" systemColor="systemBlueColor"/>
+                                <state key="normal" title="Export Views as Images"/>
+                                <connections>
+                                    <action selector="exportImages:" destination="EjD-hz-iDc" eventType="touchUpInside" id="4ZY-GT-xjc"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CBY-7K-EPi">
+                                <rect key="frame" x="20" y="199.5" width="260" height="1"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="tCC-A0-Phg"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghg-Rn-4YF">
+                                <rect key="frame" x="60" y="204.5" width="133" height="30"/>
+                                <color key="tintColor" systemColor="systemBlueColor"/>
+                                <state key="normal" title="Save Cube Building"/>
+                                <connections>
+                                    <action selector="saveCubeBuilding:" destination="EjD-hz-iDc" eventType="touchUpInside" id="Pdb-6I-3go"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xQP-sZ-kts">
+                                <rect key="frame" x="20" y="238.5" width="260" height="1"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Gvi-KK-RBX"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ErW-Rb-HqL">
+                                <rect key="frame" x="60" y="243.5" width="137" height="30"/>
+                                <color key="tintColor" systemColor="systemBlueColor"/>
+                                <state key="normal" title="Open Cube Building"/>
+                                <connections>
+                                    <action selector="openCubeBuilding:" destination="EjD-hz-iDc" eventType="touchUpInside" id="jl5-PZ-m8A"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejS-Go-25K">
+                                <rect key="frame" x="20" y="127.5" width="25" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="5PQ-BF-gCU"/>
+                                    <constraint firstAttribute="width" constant="25" id="ipw-2D-ZRK"/>
+                                </constraints>
+                                <state key="normal" image="photo.on.rectangle" catalog="system"/>
+                                <connections>
+                                    <action selector="exportImages:" destination="EjD-hz-iDc" eventType="touchUpInside" id="xVo-uS-0Ic"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BT9-Lk-xXt">
+                                <rect key="frame" x="23" y="208.5" width="19" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="6rK-O7-tih"/>
+                                    <constraint firstAttribute="width" constant="19" id="Cw4-l8-vxE"/>
+                                </constraints>
+                                <state key="normal" image="square.and.arrow.up" catalog="system"/>
+                                <connections>
+                                    <action selector="saveCubeBuilding:" destination="EjD-hz-iDc" eventType="touchUpInside" id="h9I-aw-0Tq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ki-J6-qOr">
+                                <rect key="frame" x="23" y="247.5" width="19" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="CWn-ym-jhd"/>
+                                    <constraint firstAttribute="width" constant="19" id="ecj-uf-IGa"/>
+                                </constraints>
+                                <state key="normal" image="square.and.arrow.down" catalog="system"/>
+                                <connections>
+                                    <action selector="openCubeBuilding:" destination="EjD-hz-iDc" eventType="touchUpInside" id="KRn-E9-Mgj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4H-RQ-f6t">
+                                <rect key="frame" x="60" y="161.5" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="FR6-Tw-kdM"/>
+                                    <constraint firstAttribute="height" constant="30" id="IIl-U6-vv1"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="secondaryLabelColor"/>
+                                <state key="normal" image="Bar3D"/>
+                                <connections>
+                                    <action selector="pressExportSelectButton:" destination="EjD-hz-iDc" eventType="touchUpInside" id="Hx5-AI-BKe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vf1-7r-nZ2">
+                                <rect key="frame" x="98" y="161.5" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="gW1-LX-kZP"/>
+                                    <constraint firstAttribute="width" constant="30" id="qwZ-Su-SrF"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="secondaryLabelColor"/>
+                                <state key="normal" image="BarPlan"/>
+                                <connections>
+                                    <action selector="pressExportSelectButton:" destination="EjD-hz-iDc" eventType="touchUpInside" id="2fn-Rz-S3M"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mq5-8k-RQh">
+                                <rect key="frame" x="136" y="161.5" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="76q-Lz-Hiy"/>
+                                    <constraint firstAttribute="height" constant="30" id="PAi-dc-i35"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="secondaryLabelColor"/>
+                                <state key="normal" image="BarMulti"/>
+                                <connections>
+                                    <action selector="pressExportSelectButton:" destination="EjD-hz-iDc" eventType="touchUpInside" id="9eE-Nl-T7D"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFh-0P-gW5">
+                                <rect key="frame" x="174" y="161.5" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="0jT-Fb-T34"/>
+                                    <constraint firstAttribute="height" constant="30" id="ObM-Sk-WqG"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="secondaryLabelColor"/>
+                                <state key="normal" image="BarCav"/>
+                                <connections>
+                                    <action selector="pressExportSelectButton:" destination="EjD-hz-iDc" eventType="touchUpInside" id="XZi-DL-oQg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grK-g8-TtY">
+                                <rect key="frame" x="212" y="161.5" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="dMf-gs-5vW"/>
+                                    <constraint firstAttribute="width" constant="30" id="ocv-Rk-2ua"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="secondaryLabelColor"/>
+                                <state key="normal" image="BarIso"/>
+                                <connections>
+                                    <action selector="pressExportSelectButton:" destination="EjD-hz-iDc" eventType="touchUpInside" id="lEf-eG-JA0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hoy-6t-pPY">
+                                <rect key="frame" x="250" y="161.5" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="71R-Wx-hu1"/>
+                                    <constraint firstAttribute="height" constant="30" id="CUv-zt-Df5"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="secondaryLabelColor"/>
+                                <state key="normal" image="BarCode"/>
+                                <connections>
+                                    <action selector="pressExportSelectButton:" destination="EjD-hz-iDc" eventType="touchUpInside" id="gwM-rI-qcb"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eBC-kR-rrB">
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="44"/>
+                                <items>
+                                    <navigationItem title="Cube Export" id="pia-yn-qmh">
+                                        <barButtonItem key="rightBarButtonItem" style="plain" id="TJw-sL-ize">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="r6i-BY-zZT">
+                                                <rect key="frame" x="236" y="7" width="48" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Cancel"/>
+                                                <connections>
+                                                    <action selector="dismissButton:" destination="EjD-hz-iDc" eventType="touchUpInside" id="baQ-sK-MYX"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mq5-8k-RQh" firstAttribute="centerY" secondItem="a4H-RQ-f6t" secondAttribute="centerY" id="06Q-Q3-v0D"/>
+                            <constraint firstItem="eBC-kR-rrB" firstAttribute="leading" secondItem="Wkt-60-114" secondAttribute="leading" id="0ZX-D7-Q2Z"/>
+                            <constraint firstItem="vf1-7r-nZ2" firstAttribute="leading" secondItem="a4H-RQ-f6t" secondAttribute="trailing" constant="8" symbolic="YES" id="1I8-au-M42"/>
+                            <constraint firstItem="XZM-m2-Az1" firstAttribute="centerY" secondItem="ejS-Go-25K" secondAttribute="centerY" id="1fB-Xb-PBZ"/>
+                            <constraint firstItem="hoy-6t-pPY" firstAttribute="trailing" secondItem="CBY-7K-EPi" secondAttribute="trailing" id="30z-XE-Pmr"/>
+                            <constraint firstItem="xQP-sZ-kts" firstAttribute="leading" secondItem="ejS-Go-25K" secondAttribute="leading" id="48E-b2-Mwm"/>
+                            <constraint firstItem="mq5-8k-RQh" firstAttribute="leading" secondItem="vf1-7r-nZ2" secondAttribute="trailing" constant="8" symbolic="YES" id="5nb-k5-0HN"/>
+                            <constraint firstItem="CBY-7K-EPi" firstAttribute="centerX" secondItem="Wkt-60-114" secondAttribute="centerX" id="7Ol-WO-dOQ"/>
+                            <constraint firstItem="xQP-sZ-kts" firstAttribute="trailing" secondItem="CBY-7K-EPi" secondAttribute="trailing" id="7gl-VQ-fzq"/>
+                            <constraint firstItem="CBY-7K-EPi" firstAttribute="centerY" secondItem="Wkt-60-114" secondAttribute="centerY" id="9mQ-DI-ira"/>
+                            <constraint firstItem="ghg-Rn-4YF" firstAttribute="leading" secondItem="XZM-m2-Az1" secondAttribute="leading" id="9ob-7K-OyW"/>
+                            <constraint firstItem="CBY-7K-EPi" firstAttribute="top" secondItem="a4H-RQ-f6t" secondAttribute="bottom" constant="8" symbolic="YES" id="Acp-eP-2WN"/>
+                            <constraint firstItem="kVn-GA-KG6" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6Ki-J6-qOr" secondAttribute="bottom" constant="20" id="Cxb-VK-RL2"/>
+                            <constraint firstItem="VFh-0P-gW5" firstAttribute="leading" secondItem="mq5-8k-RQh" secondAttribute="trailing" constant="8" symbolic="YES" id="DE9-Hj-GVc"/>
+                            <constraint firstAttribute="trailing" secondItem="eBC-kR-rrB" secondAttribute="trailing" id="FTX-MZ-WQ1"/>
+                            <constraint firstItem="6Ki-J6-qOr" firstAttribute="centerX" secondItem="ejS-Go-25K" secondAttribute="centerX" id="Foe-B0-tWI"/>
+                            <constraint firstItem="BT9-Lk-xXt" firstAttribute="centerX" secondItem="ejS-Go-25K" secondAttribute="centerX" id="GwT-N3-vQC"/>
+                            <constraint firstItem="a4H-RQ-f6t" firstAttribute="leading" secondItem="XZM-m2-Az1" secondAttribute="leading" id="Llk-Y4-vKz"/>
+                            <constraint firstItem="grK-g8-TtY" firstAttribute="leading" secondItem="VFh-0P-gW5" secondAttribute="trailing" constant="8" symbolic="YES" id="Np0-Na-9AW"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="CBY-7K-EPi" secondAttribute="trailing" constant="20" id="Nsj-Kv-L3N"/>
+                            <constraint firstItem="XZM-m2-Az1" firstAttribute="leading" secondItem="ejS-Go-25K" secondAttribute="trailing" constant="15" id="Omf-Xr-vZW"/>
+                            <constraint firstItem="eBC-kR-rrB" firstAttribute="top" secondItem="Wkt-60-114" secondAttribute="top" id="Sew-va-Gue"/>
+                            <constraint firstItem="grK-g8-TtY" firstAttribute="centerY" secondItem="a4H-RQ-f6t" secondAttribute="centerY" id="WMI-rt-3i8"/>
+                            <constraint firstItem="ghg-Rn-4YF" firstAttribute="centerY" secondItem="BT9-Lk-xXt" secondAttribute="centerY" id="Xa4-Mb-mbK"/>
+                            <constraint firstItem="hoy-6t-pPY" firstAttribute="leading" secondItem="grK-g8-TtY" secondAttribute="trailing" constant="8" symbolic="YES" id="XsH-Ne-RVv"/>
+                            <constraint firstItem="6Ki-J6-qOr" firstAttribute="top" secondItem="xQP-sZ-kts" secondAttribute="bottom" constant="8" symbolic="YES" id="Yn0-ZF-LFB"/>
+                            <constraint firstItem="a4H-RQ-f6t" firstAttribute="top" secondItem="XZM-m2-Az1" secondAttribute="bottom" constant="8" symbolic="YES" id="aWy-h3-wuX"/>
+                            <constraint firstItem="CBY-7K-EPi" firstAttribute="leading" secondItem="ejS-Go-25K" secondAttribute="leading" id="bPV-Us-cqy"/>
+                            <constraint firstItem="ErW-Rb-HqL" firstAttribute="centerY" secondItem="6Ki-J6-qOr" secondAttribute="centerY" id="bqy-b3-wOR"/>
+                            <constraint firstItem="BT9-Lk-xXt" firstAttribute="top" secondItem="CBY-7K-EPi" secondAttribute="bottom" constant="8" symbolic="YES" id="cwt-H8-gR8"/>
+                            <constraint firstItem="xQP-sZ-kts" firstAttribute="top" secondItem="BT9-Lk-xXt" secondAttribute="bottom" constant="8" symbolic="YES" id="evy-Yy-nnh"/>
+                            <constraint firstItem="ErW-Rb-HqL" firstAttribute="leading" secondItem="XZM-m2-Az1" secondAttribute="leading" id="fVj-94-FG0"/>
+                            <constraint firstItem="hoy-6t-pPY" firstAttribute="centerY" secondItem="a4H-RQ-f6t" secondAttribute="centerY" id="tTJ-9g-bYK"/>
+                            <constraint firstItem="VFh-0P-gW5" firstAttribute="centerY" secondItem="a4H-RQ-f6t" secondAttribute="centerY" id="y0v-Qf-Nkk"/>
+                            <constraint firstItem="vf1-7r-nZ2" firstAttribute="centerY" secondItem="a4H-RQ-f6t" secondAttribute="centerY" id="zcL-dI-JLc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Suf-M7-bOm"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="300" height="400"/>
+                    <connections>
+                        <outlet property="dismissButtonOutlet" destination="r6i-BY-zZT" id="nNv-gU-xJL"/>
+                        <outlet property="exportCavalierSelectButton" destination="VFh-0P-gW5" id="Yaq-v1-onT"/>
+                        <outlet property="exportCodeSelectButton" destination="hoy-6t-pPY" id="zqH-be-nR6"/>
+                        <outlet property="exportIsometricSelectButton" destination="grK-g8-TtY" id="70v-5o-COr"/>
+                        <outlet property="exportMultiSelectButton" destination="mq5-8k-RQh" id="9tA-Cp-tcs"/>
+                        <outlet property="exportPlanSelectButton" destination="vf1-7r-nZ2" id="04W-ba-mbV"/>
+                        <outlet property="exportSceneSelectButton" destination="a4H-RQ-f6t" id="ZYl-uQ-Bq0"/>
+                        <outlet property="exportViewsButton" destination="XZM-m2-Az1" id="2O7-W3-iTR"/>
+                        <outlet property="navigationBar" destination="eBC-kR-rrB" id="g6f-VM-wZq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jXs-PS-vem" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="459" y="71"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Bar3D" width="22" height="13.5"/>
+        <image name="BarCav" width="19" height="19"/>
+        <image name="BarCode" width="12.5" height="13"/>
+        <image name="BarIso" width="19" height="22"/>
+        <image name="BarMulti" width="13" height="22"/>
+        <image name="BarPlan" width="19" height="19"/>
+        <image name="photo.on.rectangle" catalog="system" width="128" height="96"/>
+        <image name="square.and.arrow.down" catalog="system" width="121" height="128"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,27 @@
+
+/* Class = "UISegmentedControl"; 2Kr-UB-2Z4.segmentTitles[0] = "3D"; ObjectID = "2Kr-UB-2Z4"; */
+"2Kr-UB-2Z4.segmentTitles[0]" = "3D";
+
+/* Class = "UILabel"; text = "→"; ObjectID = "6Yp-LH-pMe"; */
+"6Yp-LH-pMe.text" = "→";
+
+/* Class = "UILabel"; text = "Long press a cube to remove it."; ObjectID = "L81-sH-3Mw"; */
+"L81-sH-3Mw.text" = "Um toque de longa duração remove o cubo.";
+
+/* Class = "UIBarButtonItem"; title = "Info"; ObjectID = "QTM-mu-ahL"; */
+"QTM-mu-ahL.title" = "Info";
+
+/* Class = "UILabel"; text = "Touch a field to add a cube."; ObjectID = "Yve-pD-In7"; */
+"Yve-pD-In7.text" = "Um toque de curta duração adiciona um cubo.";
+
+/* Class = "UINavigationItem"; title = "Building Plan"; ObjectID = "Z08-x9-pBZ"; */
+"Z08-x9-pBZ.title" = "Plano de Construção";
+
+/* Class = "UILabel"; text = "→"; ObjectID = "hLx-aD-jl9"; */
+"hLx-aD-jl9.text" = "→";
+
+/* Class = "UIViewController"; title = "InfoViewController"; ObjectID = "oWg-XP-bfN"; */
+"oWg-XP-bfN.title" = "InfoViewController";
+
+/* Class = "UINavigationItem"; title = "3D View"; ObjectID = "yWM-5I-fbW"; */
+"yWM-5I-fbW.title" = "Vista 3D";

@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  Cubeling
+
+  Created by Heiko Etzold on 11.08.15.
+  MIT License
+*/
+
+DeleteHead = "Видалити усі кубики? ";
+DeleteQuestion = "Ви точно бажаєте видалити усі кубики?";
+DeleteCancel = "Ні";
+DeleteDelete = "Видалити";

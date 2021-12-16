@@ -1,0 +1,12 @@
+/* 
+  InfoPlist.strings
+  Cubeling
+
+  Created by Heiko Etzold on 11.06.18.
+  MIT License
+*/
+
+"CFBundleDisplayName" = "Cubeling";
+"CFBundleName" = "Cubeling";
+
+NSPhotoLibraryAddUsageDescription = "To save images, the app needs writing access to your photos.";

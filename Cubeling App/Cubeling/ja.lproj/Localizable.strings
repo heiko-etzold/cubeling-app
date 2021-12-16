@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  Cubeling
+
+  Created by Heiko Etzold on 11.08.15.
+  MIT License
+*/
+
+DeleteHead = "すべてのキューブを削除しますか．";
+DeleteQuestion = "本当にすべてのキューブを削除してよいですか．";
+DeleteCancel = "キャンセル";
+DeleteDelete = "削除";
